@@ -1,4 +1,4 @@
-package com.sevendiko.main.java;
+package com.sevendiko.main.java.annotation;
 
 import java.lang.annotation.*;
 

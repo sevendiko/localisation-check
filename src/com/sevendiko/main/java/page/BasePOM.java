@@ -1,5 +1,7 @@
-package com.sevendiko.main.java;
+package com.sevendiko.main.java.page;
 
+import com.sevendiko.main.java.util.PropertyLoader;
+import com.sevendiko.main.java.annotation.ExpectedLabel;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -34,8 +36,8 @@ public class BasePOM {
           System.out.println("a.text " + actualText);
           System.out.println("e.text " + expectedText);
 
-          System.out.println("a.text " + Arrays.toString(actualText.getBytes(StandardCharsets.UTF_8)));
-          System.out.println("e.text " + Arrays.toString(expectedText.getBytes(StandardCharsets.UTF_8)));
+          System.out.println("a.text.bytes " + Arrays.toString(actualText.getBytes(StandardCharsets.UTF_8)));
+          System.out.println("e.text.bytes " + Arrays.toString(expectedText.getBytes(StandardCharsets.UTF_8)));
 
           if (!actualText.equals(expectedText)) {
             localisationBugs.put(field.getDeclaringClass().getSimpleName(), field.getName());

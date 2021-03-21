@@ -1,6 +1,8 @@
 package com.sevendiko.main.java;
 
-public class TestNgTest {
+import com.sevendiko.main.java.page.SamplePOM;
+
+public class Main {
 
   public static void main(String[] args) {
     SamplePOM samplePOM = new SamplePOM();
